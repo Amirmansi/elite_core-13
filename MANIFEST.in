@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include elite_core *.css
+recursive-include elite_core *.csv
+recursive-include elite_core *.html
+recursive-include elite_core *.ico
+recursive-include elite_core *.js
+recursive-include elite_core *.json
+recursive-include elite_core *.md
+recursive-include elite_core *.png
+recursive-include elite_core *.py
+recursive-include elite_core *.svg
+recursive-include elite_core *.txt
+recursive-exclude elite_core *.pyc
