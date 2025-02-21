@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "creation": "2021-06-22 05:13:16.060494",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "webhook_key",
+  "e_invoice_print_format"
+ ],
+ "fields": [
+  {
+   "fieldname": "webhook_key",
+   "fieldtype": "Password",
+   "label": "Webhook Key",
+   "read_only": 1
+  },
+  {
+   "fieldname": "e_invoice_print_format",
+   "fieldtype": "Link",
+   "label": "E Invoice Print Format",
+   "options": "Print Format"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2021-11-01 15:13:48.211616",
+ "modified_by": "Administrator",
+ "module": "Elite Core",
+ "name": "DoxERP Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
