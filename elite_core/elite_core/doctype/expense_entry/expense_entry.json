@@ -1,0 +1,255 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "EXPENTRY.####",
+ "creation": "2021-12-10 18:07:51.308150",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "column_break_2",
+  "date",
+  "expense_accounts_section",
+  "expense_entry_account",
+  "section_break_7",
+  "total_amount",
+  "column_break_9",
+  "net_total",
+  "column_break_11",
+  "total_vat",
+  "mode_of_payment_section",
+  "expense_entry_mode_of_payment",
+  "section_break_15",
+  "net_paid",
+  "column_break_16",
+  "total_paid",
+  "more_information_section",
+  "remarks",
+  "ref_no",
+  "ref_date",
+  "column_break_7",
+  "total_of_mode_of_payment",
+  "total_expense",
+  "main_total_vat",
+  "vendor_information_section",
+  "vendor_name",
+  "column_break_31",
+  "trn",
+  "amended_from",
+  "section_break_34",
+  "journal_entry"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mode_of_payment_section",
+   "fieldtype": "Section Break",
+   "label": "Mode of Payment"
+  },
+  {
+   "fieldname": "expense_entry_mode_of_payment",
+   "fieldtype": "Table",
+   "label": "Expense Entry Mode of Payment",
+   "options": "Expense Entry Mode of Payment",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "expense_accounts_section",
+   "fieldtype": "Section Break",
+   "label": "Expense Accounts"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_of_mode_of_payment",
+   "fieldtype": "Currency",
+   "label": "Total of mode of payment",
+   "read_only": 1
+  },
+  {
+   "fieldname": "expense_entry_account",
+   "fieldtype": "Table",
+   "in_standard_filter": 1,
+   "label": "Expense Entry Account",
+   "options": "Expense Entry Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_expense",
+   "fieldtype": "Currency",
+   "label": "Total Expense",
+   "read_only": 1
+  },
+  {
+   "fieldname": "more_information_section",
+   "fieldtype": "Section Break",
+   "label": "More Information"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Expense Entry",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "net_total",
+   "fieldtype": "Currency",
+   "label": "Net Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_vat",
+   "fieldtype": "Currency",
+   "label": "Total Vat",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_paid",
+   "fieldtype": "Currency",
+   "label": "Total Paid",
+   "read_only": 1
+  },
+  {
+   "fieldname": "net_paid",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Net Paid"
+  },
+  {
+   "fieldname": "ref_no",
+   "fieldtype": "Data",
+   "label": "Ref No"
+  },
+  {
+   "fieldname": "ref_date",
+   "fieldtype": "Date",
+   "label": "Ref Date"
+  },
+  {
+   "fieldname": "main_total_vat",
+   "fieldtype": "Currency",
+   "label": "Total Vat",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vendor_information_section",
+   "fieldtype": "Section Break",
+   "label": "Vendor Information"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "vendor_name",
+   "fieldtype": "Data",
+   "label": "Vendor Name"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fetch_from": "vendor.tax_id",
+   "fetch_if_empty": 1,
+   "fieldname": "trn",
+   "fieldtype": "Data",
+   "label": "TRN"
+  },
+  {
+   "fieldname": "section_break_34",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "journal_entry",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Journal Entry",
+   "no_copy": 1,
+   "options": "Journal Entry",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-27 01:37:21.165171",
+ "modified_by": "Administrator",
+ "module": "Elite Core",
+ "name": "Expense Entry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
