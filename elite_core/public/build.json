@@ -1,0 +1,17 @@
+{
+    "js/coa.js": [
+        "public/js/coa.js"
+    ],
+    "css/coa.css": [
+        "public/css/coa.css"
+    ],
+    "js/je-report.js": [
+        "public/js/je-report.js"
+    ],
+    "css/je-report.css": [
+        "public/css/je-report.css"
+    ],
+    "css/elite_core.css": [
+        "public/css/elite_core.css"
+    ]
+}
